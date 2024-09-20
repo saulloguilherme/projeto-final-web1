@@ -1,0 +1,169 @@
+@import "./global.css";
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--verde-escuro);
+    align-items: center;
+}
+
+nav.header {
+    padding-right: 2vw;
+}
+
+a.link-header {
+    font-size: 23px;
+    padding-left: 2vw;
+    color: var(--cor-clara);
+}
+
+div.main {
+    background-color: var(--verde);
+    flex-direction: row;
+    display: flex;
+    height: 80vh;
+}
+
+article.cardapio {
+    width: 50vw;
+    display: flex;
+    align-items: flex-end;
+}
+
+div.cardapio {
+    background-color: var(--verde-escuro);
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 20px;
+}
+
+span.titulo-cardapio {
+    font-size: 25px;
+    align-self: center;
+    color: var(--cor-clara);  
+}
+
+span.data-cardapio {
+    color: var(--cor-clara);
+    align-self: center;
+    font-size: 20px;
+}
+
+div.item-cardapio {
+    display: flex;
+    flex-direction: column;
+    height: calc(100%/7);
+    justify-content: space-evenly;
+}
+
+span.titulo-prato {
+    width: 50%;
+    background-color: var(--verde-claro);
+    color: var(--cor-escura);
+    font-size: 18px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 6px;
+    text-align: center;
+}
+
+span.prato-conteudo {
+    font-size: 15px;
+    padding: 6px;
+    color: var(--cor-clara);
+}
+
+nav.botoes {
+    width: 50vw;
+}
+
+div.botoes {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.botao {
+    background-color: var(--verde-claro);
+    padding: 4vh;
+    border-radius: 50px;
+}
+
+div.botao.direita {
+    margin-left: 10vw;
+}
+
+div.botao.esquerda {
+    margin-right: 20vw;
+}
+
+a.botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span.link-title {
+    color: var(--cor-escura);
+    font-size: 20px;
+}
+
+footer {
+    width: 100vw;
+    height: 12vh;
+    background-color: var(--cor-clara);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center; 
+}
+
+div.img-unifesspa {
+    height: 12vh;
+}
+
+span.titulo-contato {
+    font-size: 15px;
+}
+
+div.contatos {
+    display: flex;
+    flex-direction: row;
+}
+
+div.contato {
+    padding-left: 6px;
+}
+
+div.whatsapp {
+    display: flex;
+    align-items: center;
+}
+
+div.whatsapp > div, span {
+    padding-left: 6px;
+}
+
+span#aviso-inferior {
+    font-size: 18px;
+    color: var(--verde-escuro);
+}

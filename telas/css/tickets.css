@@ -1,0 +1,76 @@
+@import "./global.css";
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--verde-escuro);
+    align-items: center;
+}
+
+nav.header {
+    padding-right: 2vw;
+}
+
+a.link-header {
+    font-size: 23px;
+    padding-left: 2vw;
+    color: var(--cor-clara);
+}
+
+div.main {
+    background-color: var(--verde);
+    height: 80vh;
+}
+
+footer {
+    width: 100vw;
+    height: 12vh;
+    background-color: var(--cor-clara);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center; 
+}
+
+div.img-unifesspa {
+    height: 12vh;
+}
+
+span.titulo-contato {
+    font-size: 15px;
+}
+
+div.contatos {
+    display: flex;
+    flex-direction: row;
+}
+
+div.contato {
+    padding-left: 6px;
+}
+
+div.whatsapp {
+    display: flex;
+    align-items: center;
+}
+
+div.whatsapp > div, span {
+    padding-left: 6px;
+}
+
+span#aviso-inferior {
+    font-size: 18px;
+    color: var(--verde-escuro);
+}
