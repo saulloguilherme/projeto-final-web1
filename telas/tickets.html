@@ -10,6 +10,7 @@
 <body>
     <header>
         <img src="../assets/unifesspa-ru.png" alt="Unifesspa RU">
+        <span class="page-title">COMPRAR TICKET</span>
         <nav class="header">
             <a class="link-header" href="../index.html">VOLTAR</a>
         </nav>
@@ -24,24 +25,38 @@
                     <form action="Formulário"> 
                         <div class="espaço_form">
                             <label for="nome">Nome:</label> <br>
-                            <input type="text" id="nome" />
+                            <input type="text" name="nome" id="nome" />
                         </div>
                         <div class="espaço_form">
                             <label for="matricula">Matricula:</label> <br>
-                            <input type="matricula" id="matricula" />
+                            <input type="matricula" name="matricula" id="matricula" />
                         </div>
                         <div class="espaço_form">
                             <label for="campus">Campus de retirada:</label> <br>
-                            <input type="campus" id="campus"/>
+                            <input type="campus" name="campus" id="campus"/>
                         </div>
                     </form>
                 </div>
             </div> 
             <div id="fora_do_botao">
-                <button class="botao">Ir para o pagamento</button>
+                <button class="botao" onclick="generateLink()" >Ir para o pagamento</button>
             </div>
             <p id="textoComPrecos">R$13,00 (treze reais) para os servidores e público em geral | R$2,00 (dois reais) para alunos de graduação subsidiados</p>
         </div>
+        <script>
+            function generateLink() {
+              let nome = document.getElementById('nome').value;
+              let matricula = document.getElementById('matricula').value;
+              let campus = document.getElementById('campus').value;
+              var currentDate = new Date();
+              currentDate.setDate(currentDate.getDate() + 1);
+              let url = "https://wa.me/";
+              let texto = `Nome:${nome}\nMatrícula:${matricula}\nCampus:${campus}\nData:${currentDate.toLocaleDateString()}`;
+              texto = window.encodeURIComponent(texto);
+              let end_url = `${url}559481367234?text=${texto}`;
+              window.location.href = end_url;
+            }
+        </script>
     </main>
     <footer>
         <div class="container-contatos">
@@ -50,14 +65,14 @@
                 <div class="contato">
                     <div class="whatsapp">
                         <img src="../assets/zap.png" alt="Contato Whatsapp">
-                        <span>(94) 99991-7263</span>
+                        <span>(94) 2101-7167</span>
                     </div>
                     <span>PROEX</span>
                 </div>
                 <div class="contato">
                     <div class="whatsapp">
                         <img src="../assets/zap.png" alt="Contato Whatsapp">
-                        <span>(94) 99991-7263</span>
+                        <span>(94) 8136-7234</span>
                     </div>
                     <span>RESTAURANTE</span>
                 </div>

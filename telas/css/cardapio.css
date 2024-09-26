@@ -103,3 +103,87 @@ span#aviso-inferior {
     font-size: 18px;
     color: var(--verde-escuro);
 }
+
+@media screen and (max-width: 768px)  { 
+    header {
+        height: 16vh;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--verde-escuro);
+        align-items: center;
+    }
+
+    header > img {
+        height: 10vh;
+    }
+
+    span.page-title {
+        display: none;
+    }
+
+    a.link-header {
+        font-size: 20px;
+        padding-left: 2vw;
+        color: var(--cor-clara);
+    }
+
+    div.main {
+        background-color: var(--verde);
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 80%;
+    }
+      
+      table thead,
+      table tbody,
+      table th,
+      table td,
+      table tr {
+        display: block;
+    }
+
+    table td,
+    table th {
+      height: 35px;
+    }
+
+    table thead {
+        float: left;
+    }
+
+    table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+
+    table tbody tr {
+        display: inline-block;
+    }
+
+    footer {
+        margin-top: 1em;
+        width: 100%;
+        height: 0vh;
+        background-color: var(--cor-clara);
+        position: sticky;
+        left: 0;
+        bottom: 0;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center; 
+    }
+}

@@ -133,3 +133,111 @@ span#aviso-inferior {
     font-size: 18px;
     color: var(--verde-escuro);
 }
+
+@media screen and (max-width: 768px)  {
+    body {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        height: 16vh;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--verde-escuro);
+        align-items: center;
+    }
+
+    header > img {
+        height: 10vh;
+    }
+
+    span.page-title {
+        display: none;
+    }
+
+    a.link-header {
+        font-size: 20px;
+        padding-left: 2vw;
+        color: var(--cor-clara);
+    }
+
+    div.main {
+        background-color: var(--verde);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .primeira_seçao{
+        padding-top: 2em;
+        padding-bottom: 2em;
+        display: flex;
+        height: 50%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: var(--cor-clara);
+        text-align: center;
+    }
+    .primeira_seçao > h1{ 
+        font-size: 23px;
+        padding-bottom: 1em;
+    }
+    .primeira_seçao > ul{
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    #lista_de_duvidas > li > a {
+        color: var(--cor-clara);
+    }
+    
+    #DuvOuSug{
+        padding-top: 1em;
+        align-self: flex-end;
+        font-size: 20px;
+        cursor: pointer;
+    
+    }
+    
+    .segunda_seçao{
+        padding-top: 2em;
+        padding-bottom: 2em;
+        background-color: var(--verde-claro);
+        width: 100%;
+        display: flex;
+        height: 50%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: var(--cor-escura);
+    }
+    
+    .segunda_seçao > h1{
+        padding-bottom: 1em; 
+        font-size: 23px;
+    }
+    
+    .segunda_seçao > p{
+        font-size: 20px;
+    }
+
+    footer {
+        margin-top: 1em;
+        width: 100%;
+        height: 0vh;
+        background-color: var(--cor-clara);
+        position: sticky;
+        left: 0;
+        bottom: 0;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center; 
+    }
+}
